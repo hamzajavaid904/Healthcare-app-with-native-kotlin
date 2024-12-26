@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Healthcare kt</string>
+    <string name="my_google_maps_api_key">AIzaSyDaFRY0Dzk8pqUXRPVfd5n4ucykjUv8t54</string>
+    <string name="title_activity_maps">MapsActivity</string>
+</resources>

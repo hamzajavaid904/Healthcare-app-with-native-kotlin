@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Lab tests"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="40dp"
+        android:background="@drawable/title"
+        >
+    </TextView>
+
+<TextView
+    android:layout_width="250dp"
+    android:layout_height="30dp"
+    android:text="Test Packages"
+    android:textSize="14sp"
+    android:textColor="@color/black"
+    android:textAlignment="center"
+    android:paddingTop="5dp"
+    android:layout_marginTop="-30dp"
+    android:layout_marginStart="80dp"
+    android:background="@drawable/textviewshape"
+    >
+</TextView>
+    <ListView
+        android:id="@+id/listview_lab"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginTop="50dp"
+        android:paddingStart="10dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="8dp"
+        >
+    </ListView>
+
+    <Button
+        android:id="@+id/btncart"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textviewshape"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="80dp"
+        android:text="Go to cart"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:backgroundTint="#90CAF9"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/btnback"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:background="@drawable/textviewshape"
+        android:layout_marginStart="80dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="30dp"
+        android:text="Back"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:backgroundTint="#90CAF9">
+    </Button>
+</LinearLayout>

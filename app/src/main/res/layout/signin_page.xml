@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ImageView
+        android:layout_width="250dp"
+        android:layout_height="270dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/ector"
+        >
+    </ImageView>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="30dp"
+        android:text="Healthcare"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#223A6A"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="-30dp"
+
+        >
+    </TextView>
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="30dp"
+        android:text="Lets get started!"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+    </TextView>
+    <TextView
+        android:layout_width="230dp"
+        android:layout_height="30dp"
+        android:text="Login to stay healthy and fit"
+        android:layout_gravity="center"
+        android:layout_marginStart="5dp"
+        android:textSize="16sp"
+        >
+    </TextView>
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Login"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:textColor="@color/white"
+        android:textSize="16dp"
+        android:background="@drawable/loginbtn"
+        >
+    </Button>
+    <Button
+        android:id="@+id/signupbtn"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Signup"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:textColor="#407CE2"
+        android:textSize="16dp"
+        android:background="@drawable/signup"
+        >
+    </Button>
+
+</LinearLayout>

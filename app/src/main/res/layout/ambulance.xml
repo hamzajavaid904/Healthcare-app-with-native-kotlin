@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:map="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Ambulance">
+
+<fragment
+    android:id="@+id/maps"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+        >
+</fragment>
+    
+    <androidx.cardview.widget.CardView
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        map:cardCornerRadius="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        >
+
+        <fragment
+            android:id="@+id/places_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:name="com.google.android.libraries.places.widget.AutocompleteSupportFragment"
+            tools:ignore="MissingClass">
+        </fragment>
+    </androidx.cardview.widget.CardView>
+    
+    
+    <ImageButton
+        android:id="@+id/btn1"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/stack"
+        android:scaleType="fitXY"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="@null"
+        ></ImageButton>
+</RelativeLayout>

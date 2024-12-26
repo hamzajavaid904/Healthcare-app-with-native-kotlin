@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        >
+        <ImageView
+            android:id="@+id/imgbackp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/chevronleft"
+            android:layout_marginStart="20dp"
+            >
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="Pharmacy"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:layout_marginStart="110dp"
+            >
+        </TextView>
+    </LinearLayout>
+    <EditText
+        android:layout_width="350dp"
+        android:layout_height="45dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/searchstyle"
+        android:drawableLeft="@drawable/search"
+        android:paddingStart="20dp"
+        android:hint="Search doctors,drug,articles"
+        android:drawablePadding="15dp"
+        android:textStyle="normal"
+        android:textSize="16sp"
+        >
+    </EditText>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        app:cardCornerRadius="10dp"
+        app:cardBackgroundColor="#E6E5E5"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <TextView
+                android:id="@+id/txtpres"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Order quickly with Prescription"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:textAlignment="center"
+                android:layout_marginTop="20dp"
+                >
+            </TextView>
+            <Button
+                android:id="@+id/take_an_image"
+                android:layout_below="@+id/txtpres"
+                android:layout_width="180dp"
+                android:layout_height="30dp"
+                android:text="upload prescription"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:background="@drawable/loginbtn"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                >
+            </Button>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/contractrqe1"
+                android:layout_toRightOf="@+id/txtpres"
+                ></ImageView>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+    <LinearLayout
+        android:layout_width="355dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Popular Product"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:text="see all"
+            android:layout_marginStart="180dp"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp"
+            >
+        </TextView>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewpp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="30dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="Product on Sale"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            >
+
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:text="see all"
+            android:textColor="@color/purple_200"
+            android:textSize="14sp"
+            android:textStyle="normal"></TextView>
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewpos"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        >
+    </androidx.recyclerview.widget.RecyclerView>
+</LinearLayout>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:text="Lab tests"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_margin="40dp"
+        android:background="@drawable/title"
+        >
+    </TextView>
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:text="Test Package Details"
+        android:textSize="14sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        android:paddingTop="5dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginStart="80dp"
+        android:background="@drawable/textviewshape"
+        >
+    </TextView>
+
+    <EditText
+        android:id="@+id/edit_text_labtdetails"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        android:inputType="textMultiLine"
+        android:enabled="false"
+        android:text="line1 \n line2"
+        android:textColor="#FAFAFA"
+        android:gravity="start"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingStart="20dp"
+        android:paddingTop="20dp"
+        android:background="@drawable/title"
+        >
+    </EditText>
+
+    <TextView
+        android:id="@+id/txtcost"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:text="total cost"
+        android:textColor="#FAFAFA"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:textAlignment="center"
+        android:paddingTop="10dp"
+        android:textSize="18sp"
+        android:background="@drawable/multilinestyle"
+        >
+    </TextView>
+
+    <Button
+        android:id="@+id/btn_add_cart"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="ADD TO CART"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/title"
+        >
+    </Button>
+    <Button
+        android:id="@+id/buttonbackltd"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:text="Back"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:background="@drawable/title"
+        >
+    </Button>
+</LinearLayout>
